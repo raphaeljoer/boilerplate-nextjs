@@ -1,5 +1,6 @@
 import { ChakraTheme, extendTheme } from '@chakra-ui/react';
 import { config } from './config';
+//foundations
 import { fonts } from './foundations/fonts';
 import { colors } from './foundations/colors';
 //components

@@ -3,7 +3,7 @@ import { ColorModeScript } from '@chakra-ui/react';
 //resources
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document';
 //theme
-import theme from '@/styles/global/theme';
+import theme from '@/styles/theme';
 //config
 import * as tagmanager from '@/@config/scripts/google/tagmanager';
 import { favicon, fonts } from '@/@config/ui/global';

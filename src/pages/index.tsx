@@ -1,3 +1,5 @@
+//chakra-ui
+import { Heading } from '@chakra-ui/react';
 //core components
 import Container from '@/components/molecules/Container';
 import Layout from '@/components/organisms/Layout';
@@ -12,7 +14,7 @@ export default function HomePage() {
     <Layout>
       <NextSeo {...SEO.page.home} />
       <Container mt={16} mb={24}>
-        <h1>Boilerplate NextJS</h1>
+        <Heading>Boilerplate NextJS</Heading>
       </Container>
     </Layout>
   );

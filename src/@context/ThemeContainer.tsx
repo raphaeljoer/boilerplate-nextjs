@@ -1,5 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react';
-import { theme } from '@/styles/global/theme';
+import { theme } from '@/styles/theme';
 
 interface ThemeContainerProps {
   children: JSX.Element | JSX.Element[];
