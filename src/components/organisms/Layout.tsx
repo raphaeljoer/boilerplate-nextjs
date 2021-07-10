@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Header from './Header';
 
 interface IProps {
-  children: JSX.Element | JSX.Element[] | any;
+  children: JSX.Element | JSX.Element[];
 }
 
 export const Layout = ({ children }: IProps) => {

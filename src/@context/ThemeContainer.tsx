@@ -2,7 +2,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { theme } from '@/styles/global/theme';
 
 interface ThemeContainerProps {
-  children: any;
+  children: JSX.Element | JSX.Element[];
 }
 
 export const ThemeContainer = ({ children }: ThemeContainerProps) => {

@@ -4,7 +4,7 @@ import {
 } from '@chakra-ui/react';
 
 export interface ContainerProps extends CkContainerProps {
-  children: any;
+  children: JSX.Element | JSX.Element[];
   subContainerProps?: CkContainerProps;
 }
 
