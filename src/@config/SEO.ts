@@ -5,7 +5,7 @@ export const description =
   process.env.BOILERPLATE_CONFIG_SEO_DESCRIPTION || 'The best boilerplate';
 
 export const canonical =
-  process.env.BOILERPLATE_CONFIG_OPENGRAPH_URL || 'https://boilerplate.com';
+  process.env.BOILERPLATE_CONFIG_SEO_URL || 'https://boilerplate.com';
 
 export const locale =
   process.env.BOILERPLATE_CONFIG_OPENGRAPH_LOCALE || 'pt-br';
@@ -36,9 +36,12 @@ const openGraph = {
 
 //Twitter config
 const twitter = {
-  handle: '@boilerplate',
-  site: '@boilerplate',
-  cardType: 'summary_large_image',
+  handle:
+    process.env.BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_HANDLE || '@boilerplate',
+  site: process.env.BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_SITE || '@boilerplate',
+  cardType:
+    process.env.BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_CARDTYPE ||
+    'summary_large_image',
 };
 
 //global config load on each page
