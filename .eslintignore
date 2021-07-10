@@ -1,3 +1,4 @@
 **/*.js
+**/*.hbs
 node_modules
 build
