@@ -1,16 +1,42 @@
-module.exports = {
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withPWA = require('next-pwa');
+const isProd = process.env.NODE_ENV === 'production';
+
+module.exports = withPWA({
+  pwa: {
+    dest: 'public',
+    disable: !isProd,
+  },
   env: {
-    SUAMUSICA_SJDT_RECAPTCHA_V3_SITE_KEY:
-      process.env.SUAMUSICA_SJDT_RECAPTCHA_V3_SITE_KEY,
-    SUAMUSICA_SJDT_RECAPTCHA_V3_SECRET_KEY:
-      process.env.SUAMUSICA_SJDT_RECAPTCHA_V3_SECRET_KEY,
-    SUAMUSICA_SJDT_MONGODB_URI: process.env.SUAMUSICA_SJDT_MONGODB_URI,
+    BOILERPLATE_GOOGLE_TAG_MANAGER_ID:
+      process.env.BOILERPLATE_GOOGLE_TAG_MANAGER_ID,
+    BOILERPLATE_CONFIG_SEO_SITENAME:
+      process.env.BOILERPLATE_CONFIG_SEO_SITENAME,
+    BOILERPLATE_CONFIG_SEO_DESCRIPTION:
+      process.env.BOILERPLATE_CONFIG_SEO_DESCRIPTION,
+    BOILERPLATE_CONFIG_SEO_URL: process.env.BOILERPLATE_CONFIG_SEO_URL,
+    BOILERPLATE_CONFIG_OPENGRAPH_IMAGE_URL:
+      process.env.BOILERPLATE_CONFIG_OPENGRAPH_IMAGE_URL,
+    BOILERPLATE_CONFIG_OPENGRAPH_LOCALE:
+      process.env.BOILERPLATE_CONFIG_OPENGRAPH_LOCALE,
+    BOILERPLATE_CONFIG_OPENGRAPH_TYPE:
+      process.env.BOILERPLATE_CONFIG_OPENGRAPH_TYPE,
+    BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_HANDLE:
+      process.env.BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_HANDLE,
+    BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_SITE:
+      process.env.BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_SITE,
+    BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_CARDTYPE:
+      process.env.BOILERPLATE_CONFIG_OPENGRAPH_TWITTER_CARDTYPE,
+    BOILERPLATE_CONFIG_UI_GLOBAL_FAVICON:
+      process.env.BOILERPLATE_CONFIG_UI_GLOBAL_FAVICON,
+    BOILERPLATE_CONFIG_UI_GLOBAL_FONTS:
+      process.env.BOILERPLATE_CONFIG_UI_GLOBAL_FONTS,
   },
   images: {
     path: '/_next/image',
     loader: 'default',
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    domains: ['media.graphcms.com'],
+    domains: ['media.boilerplate.com'],
   },
-};
+});
