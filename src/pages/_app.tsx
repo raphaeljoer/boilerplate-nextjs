@@ -4,10 +4,10 @@ import AppProvider from '@/@context';
 import Head from 'next/head';
 import React from 'react';
 import { AppProps } from 'next/app';
-import { description, siteName } from '@/@config/SEO';
 import * as tagmanager from '@/@config/scripts/google/tagmanager';
-import { favicon } from '@/@config/ui/global';
+import { favicon } from '@/@config/ui/favicon';
 import { fontSource } from '@/styles/foundations/fonts';
+import { description, siteName } from '@/@config/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

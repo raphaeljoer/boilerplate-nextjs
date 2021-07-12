@@ -4,8 +4,8 @@ import ThemeContainer from '@/@context/ThemeContainer';
 import React from 'react';
 import SEO from '../../next-seo.config';
 import NextNprogress from 'nextjs-progressbar';
-import { nextNprogress } from '@/@config/nprogress';
 import { DefaultSeo } from 'next-seo';
+import { nextNprogress } from '@/@config/nprogress';
 
 interface AppProviderProps {
   children: JSX.Element;
